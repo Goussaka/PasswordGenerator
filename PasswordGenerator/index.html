@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Password Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <form>
+      <select id="OptionLength"></select><label> Password Length </label><br />
+
+      <input
+        id="Numbers"
+        type="checkbox"
+        checked="true"
+        onchange="isChecked(Numbers.id,this.checked)"
+      /><label> Include Numbers : (1 2 3 4 5 6)</label><br />
+
+      <input
+        id="Lowercase"
+        type="checkbox"
+        checked="true"
+        onchange="isChecked(Lowercase.id,this.checked)"
+      /><label> Include Lowercase Characters : ( e.g. abcdefgh )</label><br />
+
+      <input
+        id="Uppercase"
+        type="checkbox"
+        checked="true"
+        onchange="isChecked(Uppercase.id,this.checked)"
+      /><label> Include Uppercase Characters: ( e.g. ABCDEFGH )</label><br />
+
+      <input
+        id="Ambiguous"
+        type="checkbox"
+        checked="true"
+        onchange="isChecked(Ambiguous.id,this.checked)"
+      /><label></label>
+        Exclude Ambiguous Characters: ( { } [ ] ( ) / \ ' " ` ~ ; : . <
+        >)</label
+      ><br />
+
+      <input
+        id="autoCopier"
+        type="checkbox"
+        checked="true"
+        onchange="isChecked(autoCopier.id,this.checked)"
+      />
+      <label> Auto- Copier :( select the password automatically )</label><br />
+
+      <select id="NumberQuantity"></select><label> Select Number Quantity </label> <br />
+
+      
+      <input type="text" onblur="msgCopyEmpty()" onfocus="autoCopieOne()" placeholder="your password here" id="password" value="" /><button id="clickToCopy">Copy</button><button id="generate">Generate</button><br />
+
+      <div id="allpassword"></div>
+
+      <span id="error" style="color:red;"></span>
+      <span id="errorTrue" style="color:green;"></span>
+
+    </form>
+  </body>
+  <script src="main.js"></script>
+</html>

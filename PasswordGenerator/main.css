@@ -1,0 +1,47 @@
+#password {
+  border: 1px solid green;
+  color: green;
+  font-size: 12px;
+  padding: 4px 2px 4px 5px;
+  margin: 3px;
+}
+#clickToCopy {
+  border: 1px solid green;
+  color: rgb(1, 109, 1);
+  background: #ffffff;
+  font-size: 12px;
+  padding: 4px 2px 4px 5px;
+  margin: 3px;
+}
+
+#generate {
+  border: 1px solid rgb(9, 138, 212);
+  background: #ffffff;
+  color: rgb(9, 138, 212);
+  font-size: 12px;
+  padding: 4px 2px 4px 5px;
+  margin: 5px;
+}
+
+#clickToCopy:hover {
+  border: 1px solid rgba(185, 74, 0, 0.918);
+  color: rgba(185, 74, 0, 0.918);
+}
+#generate:hover {
+  border: 1px solid rgb(9, 121, 185);
+  color: rgb(9, 121, 185);
+}
+#OptionLength {
+  border: 1px solid green;
+  color: green;
+  font-size: 12px;
+  padding: 1px 0px 1px 3px;
+  margin: 3px;
+}
+#NumberQuantity {
+  border: 1px solid green;
+  color: green;
+  font-size: 12px;
+  padding: 1px 0px 1px 3px;
+  margin: 3px;
+}
